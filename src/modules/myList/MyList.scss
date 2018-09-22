@@ -1,0 +1,91 @@
+.list-view{
+    font-family: 'IBM Plex Sans', sans-serif;
+    .content{
+        font-family: 'IBM Plex Sans', sans-serif;
+        margin-top: 130px;
+        padding: 25px;
+        .my-list-text{
+            font-family: 'IBM Plex Sans', sans-serif;
+            margin-bottom: 0;
+            padding-top: 10px;
+        }
+        .list-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; 
+            padding-top: 30px;
+            .Item{
+                width: calc(20% - 10px);
+                height: 200px;
+                display: flex;
+                margin: 0 20px;
+            }
+        }
+        .no-data{
+            font-family: 'IBM Plex Sans', sans-serif;
+            color: #9b9b9b;
+            padding: 15px 10px 0 0;
+        }
+    }
+    .form{
+        padding: 0px 10px 10px;
+        text-align: center;
+        input {
+            outline: none;
+            width: 80%;
+            color: rgba(255,255,255, 0.8);
+            background: transparent;
+            border: 0;
+            border-radius: 0;
+            border-bottom: 1px solid #9b9b9b;
+            float: left;
+            margin: 0;
+            &.opacity2{
+                color: rgba(255,255,255, 0.2);
+            }
+            &.display {
+                width: 80%;
+                transition: 1s;
+                margin-left: 0%;
+                padding: 8px 10px 7px;
+            }
+            &.hide {
+                width: 0;
+                transition: 1s;
+                margin-left: 80%;
+                padding: 8px 0 7px;
+            }
+        }
+        button{
+            border: 0;
+            background: transparent;
+            color: #000;
+            transition: .6s;
+            border-radius: 0 6px 6px 0;
+            outline: none;
+            background: url('../../assets/add-movie.svg') no-repeat center 3px;
+            background-size: contain;
+            width: 20%;
+            padding: 20px 0;
+            margin: 0;
+            float: left;
+            box-shadow: 0 0 0;
+            &:hover{
+                transition: .6s;
+                outline: none;
+                box-shadow: 0 0 0 0;                
+            }
+        }
+    }
+    .text-success{
+        display: block;
+        padding-top: 60px;
+        text-align: center;
+        opacity: 1;
+        transition: .6s ease;
+    }
+    .none{
+        transition: .6s ease;
+        opacity: 0 !important;
+    }
+}
